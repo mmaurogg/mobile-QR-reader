@@ -1,0 +1,56 @@
+para guardar usamos SQ-Lite
+manejador de estados: provider
+
+
+
+Recursos
+Manejar Json
+https://app.quicktype.io/
+
+paquetes utilizados
+Escanear QR 
+-> flutter_barcode_scanner -> https://pub.dev/packages/flutter_barcode_scanner
+
+Manejador de estados
+-> provider -> https://pub.dev/packages/provider/install
+
+Conocer unicacion del archivo de base de datos
+path_provider -> https://pub.dev/packages/path_provider/install
+
+
+sqflite -> https://pub.dev/packages/sqflite/install
+
+SQLLite
+--------
+para buscar el archivo .db es dentro del entorno de desarrollo de Android Studio, se dirigen a: View > Tool Windows > Device File Explorer1
+
+"Preferiblemente con el emulador corriendo" esto les abre algo muy similar al Explorador de Windows y ahí pueden ir a la ruta relativa que les arroja Android Studio Code cuando compilan el proyecto /data/user/0/<NOMBRE PROYECTO>/app_flutter/ARCHIVO.db
+
+Una vez ubican el archivo le dan click derecho "Save As" y ahí ya pueden ver la ruta exacta donde se encuentra el archivo en el ordenador, es más en la parte superior derecha dentro de Save As le puedes picar en Show path y ahí ya puedes ver la ruta exacta.
+
+
+*** si quiero hacer un cambio en la base de datos debo eliminar este archivo o cambiar la version de la bd en el código
+
+
+
+
+forma de recibir argumentos de otro widget
+    final ScanModel scan = ModalRoute.of(context).settings.arguments;
+
+
+generar la llave google maps
+----------------------
+google clud platform -> api y servicios -> credenciales -> configuracon pantalla de consentiemiento
+-> llenar los campos obligatorios y guardar -> volver -> genera las key para el proyecto (una para andrioid y otra para ios)
+
+
+si ocurre problema al iniciar probar:
+1. ir a android/gradle.properties
+2. agregar al final:
+    ...
+    ...
+    android.enableDexingArtifactTransform=false
+
+
+
+
